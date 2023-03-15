@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -27,7 +31,9 @@
               <nav class="menu">
                 <ul class="menu__list">
                   <li class="menu__list-item">
-                    <a href="#" class="menu__list-link">NEW CARS</a>
+                    <a href="#" class="menu__list-link menu__list-link_active"
+                      >NEW CARS</a
+                    >
                   </li>
                   <li class="menu__list-item">
                     <a href="#" class="menu__list-link">PRE-OWNED CARS</a>
@@ -49,7 +55,543 @@
           </div>
         </div>
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="choose">
+          <div class="container">
+            <h2 class="choose__title section-title">Choose your car</h2>
+            <div class="choose__tabs tabs">
+              <div class="tabs__btn">
+                <button
+                  class="tabs__btn-item tabs__btn-item_active"
+                  data-button="content-1"
+                >
+                  Car and Minivan
+                </button>
+                <button class="tabs__btn-item" data-button="content-2">
+                  Trucks
+                </button>
+                <button class="tabs__btn-item" data-button="content-3">
+                  Crossovers & SUVs
+                </button>
+                <button class="tabs__btn-item" data-button="content-4">
+                  Electrified
+                </button>
+              </div>
+              <div class="tabs__content">
+                <div
+                  class="tabs__content-item tabs__content-item_active"
+                  id="content-1"
+                >
+                  <div class="card">
+                    <img
+                      src="./img/shoose/01.jpg"
+                      alt="Toyota Crown 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Crown 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/02.jpg"
+                      alt="Prius Prime 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Prius Prime 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/03.jpg"
+                      alt="Toyota Prius 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Prius 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 400/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/04.jpg"
+                      alt="Hyundai Kona 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Kona 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$510/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/05.jpg"
+                      alt="Toyota Crown 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Crown 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/06.jpg"
+                      alt="Prius Prime 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Prius Prime 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/07.jpg"
+                      alt="Toyota Prius 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Prius 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 400/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/08.jpg"
+                      alt="Hyundai Kona 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Kona 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$510/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/09.jpg"
+                      alt="Toyota Crown 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Crown 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/10.jpg"
+                      alt="Prius Prime 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Prius Prime 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/11.jpg"
+                      alt="Toyota Prius 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Prius 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 400/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/12.jpg"
+                      alt="Hyundai Kona 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Kona 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$510/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="content-2">
+                  <div class="card">
+                    <img
+                      src="./img/shoose/05.jpg"
+                      alt="Toyota Crown 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Crown 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/06.jpg"
+                      alt="Prius Prime 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Prius Prime 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/07.jpg"
+                      alt="Toyota Prius 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Prius 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 400/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/08.jpg"
+                      alt="Hyundai Kona 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Kona 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$510/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="content-3">
+                  <div class="card">
+                    <img
+                      src="./img/shoose/01.jpg"
+                      alt="Toyota Crown 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Crown 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/02.jpg"
+                      alt="Prius Prime 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Prius Prime 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/03.jpg"
+                      alt="Toyota Prius 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Prius 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 400/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/04.jpg"
+                      alt="Hyundai Kona 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Kona 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$510/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/05.jpg"
+                      alt="Toyota Crown 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Crown 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/06.jpg"
+                      alt="Prius Prime 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Prius Prime 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/07.jpg"
+                      alt="Toyota Prius 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Prius 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 400/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/08.jpg"
+                      alt="Hyundai Kona 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Kona 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$510/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/09.jpg"
+                      alt="Toyota Crown 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Crown 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/10.jpg"
+                      alt="Prius Prime 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Prius Prime 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/11.jpg"
+                      alt="Toyota Prius 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Prius 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 400/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/12.jpg"
+                      alt="Hyundai Kona 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Kona 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$510/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                </div>
+                <div class="tabs__content-item" id="content-4">
+                  <div class="card">
+                    <img
+                      src="./img/shoose/03.jpg"
+                      alt="Toyota Prius 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Prius 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 400/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/04.jpg"
+                      alt="Hyundai Kona 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Kona 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$510/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/05.jpg"
+                      alt="Toyota Crown 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Crown 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/06.jpg"
+                      alt="Prius Prime 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Prius Prime 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/07.jpg"
+                      alt="Toyota Prius 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Prius 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 400/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/08.jpg"
+                      alt="Hyundai Kona 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Hyundai Kona 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$510/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/09.jpg"
+                      alt="Toyota Crown 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Toyota Crown 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 650/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                  <div class="card">
+                    <img
+                      src="./img/shoose/10.jpg"
+                      alt="Prius Prime 2023"
+                      class="card__img"
+                    />
+                    <div class="card__content">
+                      <h4 class="card__title">Prius Prime 2023</h4>
+                      <p class="card__text">starting from $ 39900</p>
+                      <p class="card__price">$ 450/mo</p>
+                    </div>
+                    <a href="#" class="card__link">see details</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="choose__link showmore-link">SHOW MORE</a>
+          </div>
+        </section>
+        <section class="blog">
+          <div class="container">
+            <div class="blog__items">
+              <div class="blog__item">
+                <img
+                  class="blog__item-img"
+                  src="./img/blog/01.jpg"
+                  alt="автомобиль на скале"
+                />
+                <h4 class="blog__item-title">
+                  An easier way to buy your next Toyota
+                </h4>
+                <a href="#" class="blog__item-link">more</a>
+              </div>
+              <div class="blog__item">
+                <img
+                  class="blog__item-img"
+                  src="./img/blog/02.jpg"
+                  alt="собака в автомобиле"
+                />
+                <h4 class="blog__item-title">
+                  A Guide to Road-Tripping With Pets
+                </h4>
+                <a href="#" class="blog__item-link">more</a>
+              </div>
+            </div>
+            <a href="#" class="blog__link showmore-link">SHOW MORE</a>
+          </div>
+        </section>
+      </main>
       <footer class="footer">
         <div class="container">
           <nav class="footer__menu">
@@ -163,6 +705,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
