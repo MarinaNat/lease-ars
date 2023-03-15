@@ -119,6 +119,13 @@ img {
   padding: 0 10px;
 }
 
+.section-title {
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -286,4 +293,27 @@ body {
   width: 120px;
   height: 6px;
   background-color: #fff;
+}
+
+.why-lease {
+  padding: 150px 0;
+}
+.why-lease__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+.why-lease__item-img {
+  margin-bottom: 30px;
+}
+.why-lease__item-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.why-lease__item-text {
+  text-align: left;
 }
