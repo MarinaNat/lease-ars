@@ -377,3 +377,43 @@ body {
 		display: block;
 	}
 }
+
+.important {
+	padding-bottom: 150px;
+	// .important__title
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	// .important__text
+
+	&__text {
+		max-width: 580px;
+		margin: 0 auto 50px;
+	}
+
+	// .important__list
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 40px;
+	}
+
+	// .important__item
+
+	&__item {
+	}
+
+	// .important__item-img
+
+	&__item-img {
+		margin-bottom: 20px;
+	}
+
+	// .important__item-text
+
+	&__item-text {
+	}
+}

@@ -387,3 +387,24 @@ body {
   margin: 0 auto;
   display: block;
 }
+
+.important {
+  padding-bottom: 150px;
+}
+.important__title {
+  margin-bottom: 20px;
+}
+.important__text {
+  max-width: 580px;
+  margin: 0 auto 50px;
+}
+.important__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.important__item-img {
+  margin-bottom: 20px;
+}
