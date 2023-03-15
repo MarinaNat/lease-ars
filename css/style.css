@@ -370,3 +370,20 @@ body {
 .how-does__item + .how-does__item {
   margin-top: 40px;
 }
+
+.video {
+  padding-bottom: 150px;
+}
+.video__title {
+  margin-bottom: 20px;
+}
+.video__text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.video__content {
+  margin: 0 auto;
+  display: block;
+}

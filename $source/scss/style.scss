@@ -354,3 +354,26 @@ body {
 		margin-top: 40px;
 	}
 }
+
+.video {
+	padding-bottom: 150px;
+	// .video__title
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	// .video__text
+
+	&__text {
+		font-size: 24px;
+		font-weight: 700;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	&__content {
+		margin: 0 auto;
+		display: block;
+	}
+}
