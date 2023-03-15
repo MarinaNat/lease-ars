@@ -292,3 +292,65 @@ body {
 		text-align: left;
 	}
 }
+
+.how-does {
+	padding-bottom: 150px;
+	// .how-does__inner
+
+	&__inner {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	// .how-does__text
+
+	&__text {
+	}
+
+	// .how-does__title
+
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+		padding-top: 50px;
+	}
+
+	// .how-does__list
+
+	&__list {
+		padding: 50px 0 70px;
+		counter-reset: myCounter;
+	}
+
+	// .how-does__item
+
+	&__item {
+		list-style-type: none;
+		position: relative;
+		width: 270px;
+		min-height: 63px;
+		margin-left: auto;
+		box-sizing: content-box;
+		padding: 19px 0 19px 240px;
+		&::before {
+			counter-increment: myCounter;
+			content: counter(myCounter);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #0066ff;
+			font-size: 48px;
+			font-weight: 700;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			color: #fff;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	&__item + &__item {
+		margin-top: 40px;
+	}
+}
