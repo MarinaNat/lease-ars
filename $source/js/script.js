@@ -33,12 +33,13 @@ function open(evt) {
 
 	document.querySelector(`#${button}`).classList.add('tabs__content-item_active')
 }
+
 // бургер меню
 
-// const menuBtn = document.querySelector('.menu-btn');
-// const menu = document.querySelector('.menu');
+const menuBtn = document.querySelector('.menu__btn');
+const menu = document.querySelector('.menu__list');
 
-// menuBtn.addEventListener('click', () => {
-// 	menu.classList.toggle('menu_active')
-// })
+menuBtn.addEventListener('click', () => {
+	menu.classList.toggle('menu__list_active')
+})
 
